@@ -19,6 +19,7 @@
     "@angular/platform-browser": "~12.2.0",
     "@angular/platform-browser-dynamic": "~12.2.0",
     "@angular/router": "~12.2.0",
+    "@ngneat/tailwind": "^7.0.3",
     "@taiga-ui/addon-charts": "^2.19.0",
     "@taiga-ui/addon-commerce": "^2.19.0",
     "@taiga-ui/addon-doc": "^2.19.0",

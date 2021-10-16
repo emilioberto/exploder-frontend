@@ -3,6 +3,7 @@ import { HomeComponent } from './home.component';
 import { HomeRoutingModule } from './home-routing.module';
 import { SharedModule } from '../shared/shared.module';
 import { TuiTabsModule } from '@taiga-ui/kit';
+import { FolderModule } from './folder/folder.module';
 
 
 
@@ -13,6 +14,7 @@ import { TuiTabsModule } from '@taiga-ui/kit';
   imports: [
     SharedModule,
     HomeRoutingModule,
+    FolderModule,
     TuiTabsModule
   ]
 })

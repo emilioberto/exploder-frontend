@@ -1,6 +1,7 @@
 import { NgModule } from '@angular/core';
 import { CommonModule } from '@angular/common';
 import { HbfTemplateComponent } from './components/hbf-template/hbf-template.component';
+import { TuiLetModule } from '@taiga-ui/cdk';
 
 
 
@@ -10,11 +11,13 @@ import { HbfTemplateComponent } from './components/hbf-template/hbf-template.com
     HbfTemplateComponent
   ],
   imports: [
-    CommonModule
+    CommonModule,
+    TuiLetModule,
   ],
   exports: [
     CommonModule,
-    HbfTemplateComponent
+    HbfTemplateComponent,
+    TuiLetModule
   ]
 })
 export class SharedModule { }

@@ -1,0 +1,12 @@
+<table tuiTable class="table" [columns]="columns">
+  <thead>
+    <tr tuiThGroup>
+      <th tuiTh>Name</th>
+    </tr>
+  </thead>
+  <tbody tuiTbody [data]="data">
+    <tr *tuiRow="let item of data; let index = index" tuiTr>
+      <td *tuiCell="'name'" tuiTd>{{ item.name }}</td>
+    </tr>
+  </tbody>
+</table>

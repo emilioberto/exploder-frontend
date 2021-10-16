@@ -10,6 +10,13 @@ export class HomeComponent extends BaseComponent {
 
   activeItemIndex = 1;
 
+  folders = [
+    { path: './folder-1' },
+    { path: './folder-2' },
+    { path: './folder-3' },
+    { path: './folder-4' },
+  ]
+
   constructor() {
     super();
   }
@@ -22,4 +29,7 @@ export class HomeComponent extends BaseComponent {
 
   }
 
+  onPlus(): void {
+
+  }
 }

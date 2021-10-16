@@ -1,6 +1,10 @@
 <app-hbf-template>
   <section header>
-    <tui-tabs-with-more [itemsLimit]="3" [(activeItemIndex)]="activeItemIndex">
+    <tui-tabs-with-more
+      class="p-5"
+      [itemsLimit]="3"
+      [(activeItemIndex)]="activeItemIndex"
+    >
       <button *tuiTab tuiTab (click)="onClick('Maps')">Maps</button>
       <button *tuiTab tuiTab disabled (click)="onClick('Calls')">Calls</button>
       <button *tuiTab tuiTab (click)="onClick('Settings')">Settings</button>
@@ -8,5 +12,9 @@
       <button *tuiTab tuiTab (click)="onClick('Trash')">Trash</button>
     </tui-tabs-with-more>
   </section>
-  <section body></section>
+  <section body class="flex flex-wrap">
+    <div>
+      <app-folder></app-folder>
+    </div>
+  </section>
 </app-hbf-template>
