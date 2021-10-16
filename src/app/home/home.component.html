@@ -1,0 +1,12 @@
+<app-hbf-template>
+  <section header>
+    <tui-tabs-with-more [itemsLimit]="3" [(activeItemIndex)]="activeItemIndex">
+      <button *tuiTab tuiTab (click)="onClick('Maps')">Maps</button>
+      <button *tuiTab tuiTab disabled (click)="onClick('Calls')">Calls</button>
+      <button *tuiTab tuiTab (click)="onClick('Settings')">Settings</button>
+      <button *tuiTab tuiTab (click)="onClick('Favorite')">Favorite</button>
+      <button *tuiTab tuiTab (click)="onClick('Trash')">Trash</button>
+    </tui-tabs-with-more>
+  </section>
+  <section body></section>
+</app-hbf-template>
